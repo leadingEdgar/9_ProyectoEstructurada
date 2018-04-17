@@ -30,7 +30,7 @@
 
 /*Ciclo con macro*/
 #define CICLOFOR(x, y) for(x = 0; x < y;x++)
-#define CICLOWHILE(a, b) while (a  < b)
+#define CICLOWHILE(a, b) while(a  < b)
 #define CICLODOWHILE(c , d) do while (c < d)
 
 /*Declaracion de las constantes con const*/
@@ -77,5 +77,15 @@ int main (void)
 		printf("HOLA MUNDO\n");
 	}
 
+	/*Macros para el ciclo while*/
+	int a;
+	int b= 10;
+
+	CICLOWHILE (a, b)
+	{
+		printf("%d",a);
+		a++;
+	}
+	
 	return 0;
 }
